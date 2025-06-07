@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>setAttribute Example</title>
+</head>
+<body>
+
+  <h1 id="main-heading">Hello Raheel!</h1>
+
+  <img id="myImage" src="" alt="Empty image">
+
+  <button onclick="changeAttributes()">Click to Set Attributes</button>
+
+  <script>
+    function changeAttributes() {
+      const heading = document.getElementById("main-heading");
+      heading.setAttribute("style", "color: blue; font-size: 32px;");
+      heading.setAttribute("title", "This is a heading");
+
+      const image = document.getElementById("myImage");
+      image.setAttribute("src", "https://via.placeholder.com/150");
+      image.setAttribute("alt", "Placeholder image");
+
+      alert("Attributes changed!");
+    }
+  </script>
+
+</body>
+</html>
